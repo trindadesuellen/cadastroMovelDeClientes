@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="suellen.br.ifsul.cadastromovelclientes">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Main"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Cadastro"
+            android:label="@string/title_activity_cadastro" />
+        <activity
+            android:name=".TipoForm"
+            android:label="@string/title_activity_tipo_form" />
+        <activity
+            android:name=".MainFormsSalvos"
+            android:label="@string/title_activity_main_forms_salvos" />
+        <activity
+            android:name=".MainMostraFormSalvo"
+            android:label="@string/title_activity_main_mostra_form_salvo"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MainSalvarCampos"
+            android:label="@string/title_activity_main_salvar_campos" />
+        <activity
+            android:name=".TipoForm2"
+            android:label="@string/title_activity_tipo_form2" />
+        <activity
+            android:name=".MainCadastrarCampos"
+            android:label="@string/title_activity_main_cadastrar_campos" />
+        <activity
+            android:name=".MainCampo"
+            android:label="@string/title_activity_main_campo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TesteMenu"
+            android:label="@string/title_activity_teste_menu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Configuracoes"
+            android:label="@string/title_activity_configuracoes"
+            android:parentActivityName=".TipoForm">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="suellen.br.ifsul.cadastromovelclientes.TipoForm" />
+        </activity>
+        <activity
+            android:name=".Configura"
+            android:label="@string/title_activity_configura"
+            android:parentActivityName=".TipoForm"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="suellen.br.ifsul.cadastromovelclientes.TipoForm" />
+        </activity>
+        <activity
+            android:name=".Usuarios"
+            android:label="@string/title_activity_usuarios"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
